@@ -68,7 +68,7 @@ public class Main {
         }
     }
 
-    private static void NuevoTema(String title){
+    public static void NuevoTema(String title){ //lo creamos publico para acceder a el desde otra clase
         System.out.println("\n---------------------->"+title+"<-----------------\n" );
     }
 }
