@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:opacity="opaque">
+<!-- lista de capas
+ xmlns: name space of xml: Importa etiquetas de terceros
+ la url no es real, solo es para dar algo unico
+ el nombre de espacio android es un prefijo para las etiquetas-->
+    <item android:drawable="@color/colorPrimary"/>
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/icon"/>
+    </item>
+</layer-list>
