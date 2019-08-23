@@ -2,7 +2,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
-
+<!--Aqui se enlistan los elementos del menu-->
+<!--Las imagenes son vectores de imagenes con xml-->
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
