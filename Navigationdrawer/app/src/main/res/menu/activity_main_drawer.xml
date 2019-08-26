@@ -21,6 +21,14 @@
             android:id="@+id/nav_tools"
             android:icon="@drawable/ic_menu_manage"
             android:title="@string/menu_tools" />
+        <item
+            android:id="@+id/nav_whatshot"
+            android:icon="@drawable/ic_whatshot_black_24dp"
+            android:title="Whatshot" />
+        <item
+            android:id="@+id/nav_mouse"
+            android:icon="@drawable/ic_mouse_black_24dp"
+            android:title="Mouse" />
     </group>
 
     <item android:title="Communicate">
