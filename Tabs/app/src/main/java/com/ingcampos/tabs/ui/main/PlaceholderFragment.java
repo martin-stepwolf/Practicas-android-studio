@@ -57,3 +57,5 @@ public class PlaceholderFragment extends Fragment {
         return root;
     }
 }
+//Inflater se vera mucho, esto se refiere a que aparece
+// Aqui se define lo que se mostrara en el layout

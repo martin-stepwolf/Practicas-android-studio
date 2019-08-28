@@ -22,17 +22,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
+//        Este objeto toma fragmentos y los pega en la activity
         ViewPager viewPager = findViewById(R.id.view_pager);
+//        viewPager permite trabajar con las pestañas
         viewPager.setAdapter(sectionsPagerAdapter);
         TabLayout tabs = findViewById(R.id.tabs);
+//        Tablayout organiza las pestañas
         tabs.setupWithViewPager(viewPager);
+//        Se asigna al adaptador
         FloatingActionButton fab = findViewById(R.id.fab);
-
-        fab.setOnClickListener(new View.OnClickListener() {
+//        Se crea el boton
+        fab.setOnClickListener(new View.OnClickListener() {//Se crea un escuchador
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) {//view es el boton
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+//                Al presionar el boton flotante se muestra este mensaje y se ejecuta la accion
             }
         });
     }

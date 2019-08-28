@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--tenemos la version 1 de XML-->
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+<!--Tenemos un coordinatorLayout que coordinara el contenido-->
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
-
+<!--ViewPager permite poder navegar o activar cada pestaña o fragmento
+Contiene el Scrolli que permite la navegacion horizontal-->
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -32,6 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?attr/colorPrimary" />
+<!--TabLayput define el esquema de los widgets-->
     </com.google.android.material.appbar.AppBarLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -41,4 +45,5 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
         app:srcCompat="@android:drawable/ic_dialog_email" />
+<!--Boton flotante que aparece como la capa de hasta arriba-->
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

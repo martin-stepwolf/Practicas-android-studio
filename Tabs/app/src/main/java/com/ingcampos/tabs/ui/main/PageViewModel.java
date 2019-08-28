@@ -13,6 +13,7 @@ public class PageViewModel extends ViewModel {
         @Override
         public String apply(Integer input) {
             return "Hello world from section: " + input;
+//    Se define el string a mostrar en cada tab
         }
     });
 
@@ -24,3 +25,5 @@ public class PageViewModel extends ViewModel {
         return mText;
     }
 }
+//Para que la aplicacion sea reactiva se crea esta clase junto con las otras dos que estan
+// en la carpeta ui.main
