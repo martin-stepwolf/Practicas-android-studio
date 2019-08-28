@@ -16,4 +16,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabTextColor="@color/colorPrimary">
+
+        <com.google.android.material.tabs.TabItem
+            android:icon="@drawable/ic_menu_gallery"
+            android:text="1"/>
+        <com.google.android.material.tabs.TabItem
+            android:icon="@drawable/ic_whatshot_black_24dp"
+            android:text="2"/>
+        <com.google.android.material.tabs.TabItem
+            android:icon="@drawable/ic_mouse_black_24dp"
+            android:text="3"/>
+        <com.google.android.material.tabs.TabItem
+            android:text="texto 5"/>
+    </com.google.android.material.tabs.TabLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
