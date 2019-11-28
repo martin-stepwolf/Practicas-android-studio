@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Firebasemensajes</string>
-    <string name="default_notification_channel_id">default_channel</string>
+    <string name="channel_id">1</string>
+    <string name="channel_name">notificacion</string>
 </resources>

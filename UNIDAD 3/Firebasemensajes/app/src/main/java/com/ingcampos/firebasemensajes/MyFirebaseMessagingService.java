@@ -58,7 +58,8 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
     public void showNotification(Map<String, String> data) {
         String title = data.get("title").toString();
         String body = data.get("body").toString();
-        String NOTIFICATION_CHANNEL_ID = getString(R.string.default_notification_channel_id);
+        String NOTIFICATION_CHANNEL_ID = getString(R.string.channel_id);
+        String NAME_CHANNEL_ID = getString(R.string.channel_name);
         //
         Intent intent = new Intent(this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -86,7 +87,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         // Since android Oreo notification channel is needed.
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             NotificationChannel notificationChannel = new NotificationChannel(NOTIFICATION_CHANNEL_ID,
-                    "Notification",
+                    NAME_CHANNEL_ID,
                     NotificationManager.IMPORTANCE_DEFAULT);
 
             notificationChannel.setDescription("Descripcion");
@@ -108,14 +109,14 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
         Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
         //
-        String NOTIFICATION_CHANNEL_ID = getString(R.string.default_notification_channel_id);
-
+        String NOTIFICATION_CHANNEL_ID = getString(R.string.channel_id);
+        String NAME_CHANNEL_ID = getString(R.string.channel_name);
 
         NotificationCompat.Builder notificationBuilder =
                 new NotificationCompat.Builder(this, NOTIFICATION_CHANNEL_ID);
         notificationBuilder
                 .setSmallIcon(R.drawable.ic_stat_ic_notification)
-                .setColor(rgb(255,160,0))
+                .setColor(rgb(0,255,0))
                 .setContentTitle(title)
                 .setContentText(body)
                 .setAutoCancel(true)
@@ -130,7 +131,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         // Since android Oreo notification channel is needed.
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             NotificationChannel notificationChannel = new NotificationChannel(NOTIFICATION_CHANNEL_ID,
-                    "Notification",
+                    NAME_CHANNEL_ID,
                     NotificationManager.IMPORTANCE_DEFAULT);
 
             notificationChannel.setDescription("Descripcion");
