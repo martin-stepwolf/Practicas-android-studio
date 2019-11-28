@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "422778531486",
+    "firebase_url": "https://fir-mensajes-64972.firebaseio.com",
+    "project_id": "fir-mensajes-64972",
+    "storage_bucket": "fir-mensajes-64972.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422778531486:android:e598a95eec85ad5d50158f",
+        "android_client_info": {
+          "package_name": "com.ingcampos.firebasemensajes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "422778531486-ep2ii30oshveen9k94hpsn53djmu5735.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ingcampos.firebasemensajes",
+            "certificate_hash": "425799afd6d343bb3e2119278e4c413234f744ef"
+          }
+        },
+        {
+          "client_id": "422778531486-lsf3pl3fv71olag42roeepr18hb3k0a6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDok6F2teBOvDC77oDypycKdjao5vnUk_w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "422778531486-lsf3pl3fv71olag42roeepr18hb3k0a6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
