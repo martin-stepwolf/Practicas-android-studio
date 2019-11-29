@@ -98,7 +98,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
             notificationManager.createNotificationChannel(notificationChannel);
         }
 
-        notificationManager.notify(0 /* ID of notification */, notificationBuilder.build());
+        notificationManager.notify(Integer.parseInt(NOTIFICATION_CHANNEL_ID) /* ID of notification */, notificationBuilder.build());
     }
 
     private void showNotification(String title, String body) {
@@ -142,6 +142,6 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
             notificationManager.createNotificationChannel(notificationChannel);
         }
 
-        notificationManager.notify(0 /* ID of notification */, notificationBuilder.build());
+        notificationManager.notify(Integer.parseInt(NOTIFICATION_CHANNEL_ID) /* ID of notification */, notificationBuilder.build());
     }
 }
